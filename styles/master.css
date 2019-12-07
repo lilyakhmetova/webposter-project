@@ -7,9 +7,11 @@ body {
   font-family: Arial Black;
   box-sizing: border-box;
   color: #0B0000;
+  overflow-x: hidden;
+}
 
-
-
+html {
+  overflow-x: hidden;
 }
 
 
@@ -200,7 +202,6 @@ footer p {
   width: 120vw;
   margin-left: -10vw;
   inline-size: max-content;
-}
 }
 
 footer p:hover {
