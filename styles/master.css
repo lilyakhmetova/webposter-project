@@ -1,0 +1,227 @@
+
+@import "reset.css";
+
+
+body {
+  background-color: rgba(70, 30, 129, 1);
+  font-family: Arial Black;
+  box-sizing: border-box;
+  color: #0B0000;
+
+
+
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* first */
+
+.first header {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.bar {
+  margin: 11px 121px 311px 20px;
+}
+
+.bar p {
+  margin-top: 11px;
+}
+
+.phobiaproba header {
+  text-align: center;
+  margin-bottom: 166px;
+}
+
+.phobiaproba p {
+  margin-left: 222px;
+}
+
+.first p {
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.mouth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mouth img {
+  position: fixed;
+  top: 113px;
+  z-index: -1;
+  /* animation: pulse 3s ease infinite; */
+}
+
+/* second */
+
+.second {
+  position: relative;
+}
+
+.second header {
+  font-size: 80px;
+  line-height: 140%;
+  text-align: center;
+  color: #0B0000;
+
+}
+
+#snakehand {
+  position: absolute;
+  left: 50px;
+  width: 400px;
+  top: -160px;
+}
+
+#spider1 {
+  position: absolute;
+  left: 22px;
+  width: 66px;
+  top: 20px;
+}
+
+#spider2 {
+  position: absolute;
+  left: 210px;
+  width: 96px;
+  top: 65px;
+}
+
+#spiderhand {
+  position: absolute;
+  right: 84px;
+  width: 400px;
+  top: 95px;
+}
+
+/* third */
+
+.third {
+  position: relative;
+}
+
+#violetspider {
+  position: absolute;
+  left: 247px;
+  top: 70px;
+}
+
+#violetspider2 {
+  position: absolute;
+  left: 187px;
+  top: 130px;
+}
+
+#yellowspider {
+  position: absolute;
+  left: 236px;
+  top: 170px;
+}
+
+#yellowspider2 {
+  position: absolute;
+  left: 107px;
+  top: 190px;
+}
+
+#violetsnake {
+  position: absolute;
+  left: 107px;
+  top: 200px;
+}
+
+#yellowsnake {
+  position: absolute;
+  left: 240px;
+  top: 280px;
+}
+
+#violetspider3 {
+  position: absolute;
+  left: 167px;
+  top: 320px;
+}
+
+#violetspider4 {
+  position: absolute;
+  left: 40px;
+  top: 230px;
+}
+
+#yellowspider3 {
+  position: absolute;
+  left: 2px;
+  top: 250px;
+}
+
+#violetspider5 {
+  position: absolute;
+  left: -25px;
+  top: 280px;
+}
+
+#yellowspider4 {
+  position: absolute;
+  left: 60px;
+  top: 325px;
+}
+
+#violetspider6 {
+  position: absolute;
+  left: 5px;
+  top: 370px;
+}
+
+/* footer */
+
+footer {
+  background: #0B0000;
+  margin-top: 330px;
+  overflow-x: hidden;
+}
+
+footer p {
+  width: 520px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #E95645;
+  padding-top: 0px;
+  text-align: center;
+  width: 120vw;
+  margin-left: -10vw;
+  inline-size: max-content;
+}
+}
+
+footer p:hover {
+  color: #4F238F;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #5C3EAF;
+}
+
+footer span {
+  color: #E95645;
+  font-size: 8px;
+  line-height: 150%;
+  margin-left: 3px;
+}
