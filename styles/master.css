@@ -10,7 +10,6 @@
 }
 
 
-
 body {
   background-color: rgba(70, 30, 129, 1);
   font-family: 'Arial Black';
@@ -38,7 +37,7 @@ html {
 }
 
 .bar {
-  margin: 11px 121px 311px 20px;
+  margin: 8px 121px 311px 20px;
 }
 
 .bar p {
@@ -51,7 +50,7 @@ html {
 }
 
 .phobiaproba p {
-  margin-left: 222px;
+  margin-left: 224px;
 }
 
 .first p {
@@ -125,6 +124,54 @@ html {
   position: absolute;
   left: 247px;
   top: 70px;
+  /* animation: violetspider 8s ease-in-out infinite; */
+}
+
+@keyframes violetspider {
+  10% {
+    transform: translate(-1vh, 1vh) rotate(0);
+  }
+
+  20% {
+    transform: translate(-2vh, 2vh) rotate(10deg);
+  }
+
+  30% {
+    transform: translate(-3vh, 2vh) rotate(-10deg);
+  }
+
+  40% {
+    transform: translate(-4vh, 4vh) rotate(-20deg);
+  }
+
+  50% {
+    transform: translate(-6vh, 5vh) rotate(20deg);
+  }
+
+  60% {
+    transform: translate(-8vh, 8vh) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(-6vh, 5vh) rotate(160deg);
+  }
+
+  80% {
+
+  }
+
+  90% {
+
+  }
+
+  100% {
+
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
 }
 
 #violetspider2 {
@@ -209,12 +256,29 @@ footer p {
   padding-top: 0px;
   text-align: center;
   width: 120vw;
-  margin-left: -10vw;
+  margin-left: -50vw;
   inline-size: max-content;
+  animation: shake 5s ease infinite;
 }
+
+/* #one {
+  animation: shake 5s ease-in reverse infinite;
+} */
+
+@keyframes shake {
+  50% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
 
 footer p:hover {
   color: #4F238F;
+  transform: scale(1.5);
 }
 
 .footer {
@@ -233,9 +297,42 @@ footer span {
   color: #E95645;
   font-size: 8px;
   line-height: 150%;
-  margin-left: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .phobia {
   padding-top: 5px;
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 414px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1366px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}
+
+@media (min-width: 1680px) {
+
+}
+
+@media (min-width: 1920px) {
+
 }
