@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
   color: #0B0000;
   overflow-x: hidden;
+  cursor: url('../img/spider1.svg'), pointer;
 }
 
 html {
@@ -47,10 +48,11 @@ html {
 .phobiaproba header {
   text-align: center;
   margin-bottom: 166px;
+  margin-left: 10px;
 }
 
 .phobiaproba p {
-  margin-left: 224px;
+  margin-left: 222px;
 }
 
 .first p {
@@ -62,13 +64,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .mouth img {
   position: fixed;
   top: 113px;
   z-index: -1;
+  width: 70%;
   /* animation: pulse 3s ease infinite; */
 }
 
@@ -83,8 +85,34 @@ html {
   line-height: 140%;
   text-align: center;
   color: #0B0000;
+  animation: blink 2s ease-in-out infinite;
+  /* transition: 5s ease-in-out; */
 
 }
+
+@keyframes blink {
+
+  0% {
+    color: #0B0000;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: #0B0000;
+  }
+
+}
+
+
+/* .second header:hover {
+  color: white;
+  transform: rotate(360deg) scale(2);
+
+} */
+
 
 #snakehand {
   position: absolute;
@@ -98,6 +126,38 @@ html {
   left: 22px;
   width: 66px;
   top: 20px;
+  animation: spider1 10s ease-in-out infinite;
+}
+
+@keyframes spider1 {
+  10% {
+    transform: rotate(3deg) translate(1vh,1vh);
+  }
+
+  20% {
+    transform: rotate(-3deg) translate(-2vh,2vh);
+  }
+
+  30% {
+    transform: rotate(3deg) translate(7vh,7vh);
+  }
+
+  40% {
+    transform: rotate(-5deg) translate(-3vh,4vh);
+  }
+
+  50% {
+    transform: rotate(25deg) translate(3vh,4vh);
+  }
+
+  60% {
+    transform: rotate(50deg) translate(4vh,4vh);
+  }
+
+  70% {
+    transform: rotate(40deg) translate(10vh,15vh);
+  }
+
 }
 
 #spider2 {
@@ -105,6 +165,7 @@ html {
   left: 210px;
   width: 96px;
   top: 65px;
+  animation: spider1 10s ease-in-out reverse infinite;
 }
 
 #spiderhand {
@@ -118,13 +179,17 @@ html {
 
 .third {
   position: relative;
+  z-index: 1;
 }
 
 #violetspider {
   position: absolute;
-  left: 247px;
+  /* left: 247px; */
   top: 70px;
-  /* animation: violetspider 8s ease-in-out infinite; */
+
+  width: 30vw;
+  left: 80vw;
+  animation: violetspider 10s ease-in-out infinite;
 }
 
 @keyframes violetspider {
@@ -145,7 +210,7 @@ html {
   }
 
   50% {
-    transform: translate(-6vh, 5vh) rotate(20deg);
+    transform: translate(-6vh, 5vh) rotate(20deg) scale(1.1);
   }
 
   60% {
@@ -157,87 +222,147 @@ html {
   }
 
   80% {
-
+    transform: translate(-4vh, 4vh) rotate(200deg);
   }
 
   90% {
-
+    transform: translate(-3vh, 2vh) rotate(230deg);
   }
 
   100% {
-
-  }
-
-  50% {
-    transform: scale(1.1);
+    transform: translate(0vh, 0vh) rotate(0);
   }
 
 }
 
 #violetspider2 {
   position: absolute;
-  left: 187px;
   top: 130px;
+  width: 30vw;
+  left: 60vw;
+  animation: violetspider 12s linear reverse infinite;
 }
 
 #yellowspider {
   position: absolute;
-  left: 236px;
+  left: 70vw;
   top: 170px;
+  width: 40vw;
+  animation: violetspider 13s ease-in-out alternate infinite;
+  animation-delay: 1s;
 }
 
 #yellowspider2 {
   position: absolute;
-  left: 107px;
+  width: 20vw;
+  left: 30vw;
   top: 190px;
+  animation: violetspider 15s ease-in reverse infinite;
 }
 
 #violetsnake {
   position: absolute;
-  left: 107px;
+  left: 30vw;
+  width: 50vw;
   top: 200px;
+  animation: snake 18s ease-in-out infinite;
+}
+
+@keyframes snake {
+
+  10% {
+    transform: skewX(10deg);
+  }
+
+  20% {
+    transform: translateY(4vw);
+  }
+
+  30% {
+    transform: skewX(10deg)translateY(8vw);
+  }
+
+  40% {
+    transform: skewX(15deg) translateY(8vw);
+  }
+
+  50% {
+    transform: skewX(20deg) translateY(16vw);
+  }
+
+  60% {
+    transform: skewX(10deg) translateY(16vw) rotate(45deg);
+  }
+
+  70% {
+    transform: skewX(20deg) translateY(24vw) rotate(90deg);
+  }
+
+  80% {
+    transform: skewX(20deg) translateY(24vw) rotate(135deg);
+  }
+
+  90% {
+    transform: skewX(20deg) translateY(24vw) rotate(180deg);
+  }
+
 }
 
 #yellowsnake {
   position: absolute;
-  left: 240px;
+  left: 70vw;
+  width: 20vw;
   top: 280px;
+  animation: snake 20s ease-in-out alternate infinite;
+  animation-delay: 2s;
 }
 
 #violetspider3 {
   position: absolute;
-  left: 167px;
+  left: 50vw;
+  width: 30vw;
   top: 320px;
+  animation: violetspider 11s ease-in-out alternate infinite;
 }
 
 #violetspider4 {
   position: absolute;
-  left: 40px;
+  left: 10vw;
+  width: 30vw;
   top: 230px;
+  animation: violetspider 17s ease-in-out reverse infinite;
 }
 
 #yellowspider3 {
   position: absolute;
-  left: 2px;
+  left: 1vw;
+  width: 15vw;
   top: 250px;
+  animation: violetspider 20s ease-in-out infinite;
 }
 
 #violetspider5 {
   position: absolute;
-  left: -25px;
+  left: -10vw;
+  width: 40vw;
   top: 280px;
+  animation: violetspider 12s ease-in-out reverse infinite;
 }
 
 #yellowspider4 {
   position: absolute;
-  left: 60px;
+  left: 20vw;
+  width: 30vw;
   top: 325px;
+  animation: violetspider 18s ease-in-out infinite;
 }
 
 #violetspider6 {
   position: absolute;
-  left: 5px;
+  left: 1vw;
+  width: 30vw;
   top: 370px;
+  animation: violetspider 10s ease-in-out reverse infinite;
 }
 
 /* footer */
@@ -258,27 +383,55 @@ footer p {
   width: 120vw;
   margin-left: -50vw;
   inline-size: max-content;
-  animation: shake 5s ease infinite;
+  animation: move 10s ease-in-out infinite;
+  transition: 0.8s ease;
 }
 
-/* #one {
-  animation: shake 5s ease-in reverse infinite;
-} */
+#one,
+#three,
+#five,
+#seven,
+#nine {
+  animation: movereverse 10s ease-in-out infinite;
+}
 
-@keyframes shake {
+@keyframes move {
+  0% {
+    transform: translateX(-5%);
+  }
+
   50% {
-    transform: translateX(100vw);
+    transform: translateX(5%);
   }
 
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-5%);
   }
+}
+
+@keyframes movereverse {
+
+  0% {
+    transform: translateX(5%);
+  }
+
+  50% {
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(5%);
+  }
+
 }
 
 
 footer p:hover {
   color: #4F238F;
-  transform: scale(1.5);
+  font-size: 250%;
+  user-select: none;
+  cursor: url('../img/spider1.svg'), pointer;
+
 }
 
 .footer {
@@ -303,13 +456,128 @@ footer span {
 
 .phobia {
   padding-top: 5px;
+  z-index: 0;
+  position: relative;
 }
 
+/* 375px */
+
 @media (min-width: 375px) {
+
+  .phobiaproba {
+    margin-top: 80px;
+    margin-right: 22px;
+
+  }
+
+  .phobiaproba header {
+    text-align: right;
+    margin-bottom: 180px;
+    margin-left: 10px;
+  }
+
+  .phobiaproba p {
+    margin-left: 267px;
+  }
+
+  .bar {
+    margin: 8px 121px 311px 22px;
+  }
+
+  #snakehand {
+    left: 50px;
+    width: 450px;
+    top: -180px;
+  }
+
+  #spider1 {
+    left: 22px;
+    width: 80px;
+    top: 20px;
+  }
+
+  #spider2 {
+    left: 210px;
+    width: 120px;
+    top: 65px;
+    animation: spider1 10s ease-in-out reverse infinite;
+  }
+
+  #spiderhand {
+    width: 450px;
+    top: 70px;
+  }
+
+  footer span {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 
 }
 
 @media (min-width: 414px) {
+
+  .first header {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .first p {
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+
+  .phobiaproba {
+    margin-top: 80px;
+    margin-right: 22px;
+
+  }
+
+  .phobiaproba header {
+    text-align: right;
+    margin-bottom: 180px;
+    margin-left: 10px;
+  }
+
+  .phobiaproba p {
+    margin-left: 267px;
+  }
+
+  .bar {
+    margin: 8px 121px 311px 22px;
+  }
+
+  #snakehand {
+    left: 50px;
+    width: 520px;
+    top: -210px;
+  }
+
+  #spider1 {
+    left: 22px;
+    width: 90px;
+    top: 20px;
+  }
+
+  #spider2 {
+    left: 210px;
+    width: 130px;
+    top: 65px;
+    animation: spider1 10s ease-in-out reverse infinite;
+  }
+
+  #spiderhand {
+    width: 500px;
+    top: 40px;
+  }
+
+  footer span {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+
+
 
 }
 
