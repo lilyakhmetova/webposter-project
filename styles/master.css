@@ -17,6 +17,15 @@ body {
   color: #0B0000;
   overflow-x: hidden;
   cursor: url('../img/spider1.svg'), pointer;
+  /* animation: techno 0.5s ease-in-out infinite; */
+}
+
+@keyframes techno {
+
+  50% {
+    background-color: black;
+  }
+
 }
 
 html {
@@ -43,6 +52,7 @@ html {
 
 .bar p {
   margin-top: 11px;
+  margin-left: 1vw;
 }
 
 .phobiaproba header {
@@ -85,7 +95,7 @@ html {
   line-height: 140%;
   text-align: center;
   color: #0B0000;
-  animation: blink 2s ease-in-out infinite;
+  animation: blink 6s ease-in-out infinite;
   /* transition: 5s ease-in-out; */
 
 }
@@ -96,8 +106,16 @@ html {
     color: #0B0000;
   }
 
+  35% {
+    transform: skewX(15deg) skewY(20deg) scale(1.6);
+  }
+
   50% {
     color: white;
+  }
+
+  65% {
+    transform: skewX(-15deg) skewY(-20deg) scale(1.6);
   }
 
   100% {
@@ -232,8 +250,7 @@ html {
   left: 70vw;
   width: 20vw;
   top: 280px;
-  animation: snake 44s ease-in-out alternate infinite;
-  animation-delay: 4s;
+  animation: snake 44s ease-in-out infinite;
 }
 
 #violetspider3 {
@@ -427,7 +444,8 @@ footer p {
   margin-left: -50vw;
   inline-size: max-content;
   animation: move 10s ease-in-out infinite;
-  transition: 0.8s ease;
+  transition: 1.5s ease-in-out;
+  user-select: none;
 }
 
 #one,
@@ -468,11 +486,10 @@ footer p {
 
 }
 
-
 footer p:hover {
-  /* color: #4F238F;
-  font-size: 250%;
-  user-select: none; */
+  color: #4F238F;
+  font-size: 300%;
+  user-select: none;
 
 }
 
@@ -657,6 +674,10 @@ footer span {
     margin: 8px 121px 311px 26px;
   }
 
+  .bar p {
+    margin-top: 20px;
+  }
+
   .second header {
     font-size: 165px;
     line-height: 110%;
@@ -671,94 +692,97 @@ footer span {
 
   #spider1 {
     left: 22px;
-    width: 90px;
+    width: 25vw;
     top: 20px;
   }
 
   #spider2 {
-    left: 210px;
-    width: 130px;
-    top: 65px;
-    animation: spider1 10s ease-in-out reverse infinite;
+    left: 70vw;
+    width: 20vw;
+    top: 350px;
   }
 
   #spiderhand {
-    width: 500px;
-    top: 40px;
+    width: 700px;
+    top: 130px;
+    left: -30vw;
   }
 
   #violetspider {
-    top: 0px;
+    top: 180px;
     width: 25vw;
     left: 90vw;
   }
 
-
   #violetspider2 {
-    top: 40px;
+    top: 250px;
     width: 25vw;
     left: 70vw;
   }
 
   #yellowspider {
     left: 80vw;
-    top: 100px;
+    top: 300px;
     width: 30vw;
   }
 
   #yellowspider2 {
     width: 20vw;
     left: 40vw;
-    top: 120px;
+    top: 320px;
   }
 
   #violetsnake {
     left: 40vw;
     width: 35vw;
-    top: 130px;
+    top: 330px;
   }
 
 
   #yellowsnake {
-    left: 80vw;
+    left: 75vw;
     width: 20vw;
-    top: 210px;
+    top: 410px;
   }
 
   #violetspider3 {
     left: 60vw;
     width: 25vw;
-    top: 250px;
+    top: 450px;
   }
 
   #violetspider4 {
     left: 20vw;
     width: 25vw;
-    top: 140px;
+    top: 340px;
   }
 
   #yellowspider3 {
     left: 11vw;
     width: 25vw;
-    top: 180px;
+    top: 380px;
   }
 
   #violetspider5 {
     left: 0vw;
     width: 30vw;
-    top: 210px;
+    top: 410px;
   }
 
   #yellowspider4 {
     left: 30vw;
     width: 25vw;
-    top: 255px;
+    top: 455px;
   }
 
   #violetspider6 {
     left: 11vw;
     width: 25vw;
-    top: 300px;
+    top: 500px;
+  }
+
+  footer {
+    margin-top: 550px;
   }
 
   footer p {
@@ -773,19 +797,332 @@ footer span {
     margin-right: 30px;
   }
 
-
-
-
-
-
-
 }
 
 @media (min-width: 1024px) {
 
+  .mouth img {
+    top: -445px;
+    width: 65%;
+  }
+
+  .first header {
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .first p {
+    font-size: 24px;
+  }
+
+  .phobiaproba {
+    margin-top: -10vw;
+    margin-right: 50px;
+
+  }
+
+  .phobiaproba header {
+    text-align: right;
+    margin-bottom: 300px;
+    margin-left: 10px;
+  }
+
+  .phobiaproba p {
+    margin-left: 75vw;
+  }
+
+  .bar {
+    margin: 8px 121px 311px 50px;
+  }
+
+  .bar p {
+    margin-top: 30px;
+  }
+
+  .second header {
+    font-size: 200px;
+    line-height: 100%;
+
+  }
+
+  #snakehand {
+    left: 40vw;
+    width: 900px;
+    top: -31vw;
+  }
+
+  #spider1 {
+    left: 22px;
+    width: 25vw;
+    top: 20px;
+  }
+
+  #spider2 {
+    left: 70vw;
+    width: 20vw;
+    top: 350px;
+  }
+
+  #spiderhand {
+    width: 900px;
+    top: 0vw;
+    left: -30vw;
+  }
+
+  #violetspider {
+    top: 20vw;
+    width: 25vw;
+    left: 85vw;
+  }
+
+  #violetspider2 {
+    top: 25vw;
+    width: 25vw;
+    left: 65vw;
+  }
+
+  #yellowspider {
+    left: 75vw;
+    top: 34vw;
+    width: 30vw;
+  }
+
+  #yellowspider2 {
+    width: 20vw;
+    left: 35vw;
+    top: 30vw;
+  }
+
+  #violetsnake {
+    left: 35vw;
+    width: 30vw;
+    top: 20vw;
+  }
+
+
+  #yellowsnake {
+    left: 70vw;
+    width: 15vw;
+    top: 25vw;
+  }
+
+  #violetspider3 {
+    left: 55vw;
+    width: 25vw;
+    top: 450px;
+  }
+
+  #violetspider4 {
+    left: 15vw;
+    width: 25vw;
+    top: 45vw;
+  }
+
+  #yellowspider3 {
+    left: 6vw;
+    width: 25vw;
+    top: 30vw;
+  }
+
+  #violetspider5 {
+    left: -5vw;
+    width: 30vw;
+    top: 30vw;
+  }
+
+  #yellowspider4 {
+    left: 25vw;
+    width: 25vw;
+    top: 40vw;
+  }
+
+  #violetspider6 {
+    left: 6vw;
+    width: 25vw;
+    top: 45vw;
+  }
+
+  footer {
+    margin-top: 550px;
+  }
+
+  footer p {
+    font-size: 36px;
+    line-height: 51px;
+
+  }
+
+  footer span {
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
 }
 
 @media (min-width: 1280px) {
+
+  .mouth img {
+    top: -37vw;
+    width: 54%;
+  }
+
+  .first header {
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .first p {
+    font-size: 24px;
+  }
+
+  .phobiaproba {
+    margin-top: -7vw;
+    margin-right: 50px;
+
+  }
+
+  .phobiaproba header {
+    text-align: right;
+    margin-bottom: 300px;
+    margin-left: 10px;
+  }
+
+  .phobiaproba p {
+    margin-left: 75vw;
+  }
+
+  .bar {
+    margin: 8px 121px 311px 50px;
+  }
+
+  .bar p {
+    margin-top: 30px;
+  }
+
+  .second header {
+    font-size: 200px;
+    line-height: 100%;
+
+  }
+
+  #snakehand {
+    left: 51vw;
+    width: 900px;
+    top: -24vw;
+  }
+
+  #spider1 {
+    left: 22px;
+    width: 25vw;
+    top: 20px;
+  }
+
+  #spider2 {
+    left: 70vw;
+    width: 20vw;
+    top: 350px;
+  }
+
+  #spiderhand {
+    width: 900px;
+    top: 0vw;
+    left: -30vw;
+  }
+
+  #violetspider {
+    top: 25vw;
+    width: 20vw;
+    left: 85vw;
+  }
+
+  #violetspider2 {
+    top: 30vw;
+    width: 20vw;
+    left: 65vw;
+  }
+
+  #yellowspider {
+    left: 75vw;
+    top: 40vw;
+    width: 25vw;
+  }
+
+  #yellowspider2 {
+    width: 15vw;
+    left: 35vw;
+    top: 35vw;
+  }
+
+  #violetsnake {
+    left: 35vw;
+    width: 25vw;
+    top: 30vw;
+  }
+
+
+  #yellowsnake {
+    left: 70vw;
+    width: 10vw;
+    top: 35vw;
+  }
+
+  #violetspider3 {
+    left: 55vw;
+    width: 20vw;
+    top: 50vw;
+  }
+
+  #violetspider4 {
+    left: 15vw;
+    width: 20vw;
+    top: 50vw;
+  }
+
+  #yellowspider3 {
+    left: 6vw;
+    width: 20vw;
+    top: 35vw;
+  }
+
+  #violetspider5 {
+    left: -5vw;
+    width: 25vw;
+    top: 35vw;
+  }
+
+  #yellowspider4 {
+    left: 25vw;
+    width: 20vw;
+    top: 45vw;
+  }
+
+  #violetspider6 {
+    left: 6vw;
+    width: 20vw;
+    top: 50vw;
+  }
+
+  footer {
+    margin-top: 750px;
+  }
+
+  footer p {
+    font-size: 36px;
+    line-height: 51px;
+
+  }
+
+  footer span {
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+
 
 }
 
