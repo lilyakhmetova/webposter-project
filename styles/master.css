@@ -223,7 +223,7 @@ html {
   left: 30vw;
   width: 50vw;
   top: 200px;
-  animation: snake 18s ease-in-out infinite;
+  animation: snake 40s ease-in-out infinite;
 }
 
 
@@ -232,8 +232,8 @@ html {
   left: 70vw;
   width: 20vw;
   top: 280px;
-  animation: snake 20s ease-in-out alternate infinite;
-  animation-delay: 2s;
+  animation: snake 44s ease-in-out alternate infinite;
+  animation-delay: 4s;
 }
 
 #violetspider3 {
@@ -329,40 +329,81 @@ html {
 
 @keyframes snake {
 
-  10% {
+  5% {
     transform: skewX(10deg);
   }
 
+  10% {
+    transform: translateY(6vw);
+  }
+
+  15% {
+    transform: skewX(20deg) translateY(10vw);
+  }
+
   20% {
-    transform: translateY(4vw);
+    transform: skewX(-10deg) translateY(14vw);
+  }
+
+  25% {
+    transform: skewX(20deg) translateY(18vw);
   }
 
   30% {
-    transform: skewX(10deg)translateY(8vw);
+    transform: skewX(-10deg) translateY(22vw);
+  }
+
+  35% {
+    transform: skewX(10deg) translateY(26vw);
   }
 
   40% {
-    transform: skewX(15deg) translateY(8vw);
+    transform: skewX(-10deg) translateY(30vw);
+  }
+
+  45% {
+    transform: skewX(10deg) translateY(34vw);
   }
 
   50% {
-    transform: skewX(20deg) translateY(16vw);
+    transform: translateY(34vw) rotate(180deg);
+  }
+
+  55% {
+    transform: skewX(10deg) translateY(34vw) rotate(180deg);
   }
 
   60% {
-    transform: skewX(10deg) translateY(16vw) rotate(45deg);
+    transform: skewX(-10deg) translateY(30vw) rotate(180deg);
+  }
+
+  65% {
+    transform: skewX(10deg) translateY(26vw) rotate(180deg);
   }
 
   70% {
-    transform: skewX(20deg) translateY(24vw) rotate(90deg);
+    transform: skewX(0deg) translateY(22vw) rotate(180deg);
+  }
+
+  75% {
+    transform: skewX(10deg) translateY(18vw) rotate(180deg);
   }
 
   80% {
-    transform: skewX(20deg) translateY(24vw) rotate(135deg);
+    transform: skewX(-10deg) translateY(14vw) rotate(180deg);
+  }
+
+  85% {
+    transform: skewX(20deg) translateY(10vw) rotate(180deg);
+
   }
 
   90% {
-    transform: skewX(20deg) translateY(24vw) rotate(180deg);
+    transform: translateY(6vw) rotate(180deg);
+  }
+
+  95% {
+    transform: skewX(10deg) rotate(180deg);
   }
 
 }
@@ -429,10 +470,9 @@ footer p {
 
 
 footer p:hover {
-  color: #4F238F;
+  /* color: #4F238F;
   font-size: 250%;
-  user-select: none;
-  cursor: url('../img/spider1.svg'), pointer;
+  user-select: none; */
 
 }
 
