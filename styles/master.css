@@ -34,6 +34,7 @@ html {
 
 
 * {
+  transition: all 500ms ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,7 +63,7 @@ html {
 }
 
 .phobiaproba p {
-  margin-left: 222px;
+  margin-left: 70vw;
 }
 
 .first p {
@@ -78,7 +79,7 @@ html {
 
 .mouth img {
   position: fixed;
-  top: 113px;
+  top: 32vw;
   z-index: -1;
   width: 70%;
   /* animation: pulse 3s ease infinite; */
@@ -134,16 +135,16 @@ html {
 
 #snakehand {
   position: absolute;
-  left: 50px;
-  width: 400px;
-  top: -160px;
+  left: 15vw;
+  width: 130vw;
+  top: -52vw;
 }
 
 #spider1 {
   position: absolute;
-  left: 22px;
-  width: 66px;
-  top: 20px;
+  left: 10vw;
+  width: 25vw;
+  top: 1vw;
   animation: spider1 10s ease-in-out infinite;
 }
 
@@ -180,17 +181,17 @@ html {
 
 #spider2 {
   position: absolute;
-  left: 210px;
-  width: 96px;
-  top: 65px;
+  left: 60vw;
+  width: 30vw;
+  top: 30vw;
   animation: spider1 10s ease-in-out reverse infinite;
 }
 
 #spiderhand {
   position: absolute;
-  right: 84px;
-  width: 400px;
-  top: 95px;
+  right: 31vw;
+  width: 130vw;
+  top: 18vw;
 }
 
 /* third */
@@ -198,22 +199,39 @@ html {
 .third {
   position: relative;
   z-index: 1;
+  user-select: none;
 }
 
 #violetspider {
   position: absolute;
   /* left: 247px; */
-  top: 70px;
-
+  top: 20vw;
   width: 30vw;
   left: 80vw;
   animation: violetspider 10s ease-in-out infinite;
 }
 
+/* #violetspider:hover,
+#violetspider2:hover,
+#yellowspider:hover,
+#yellowspider2:hover,
+#violetsnake:hover,
+#yellowsnake:hover,
+#violetspider3:hover,
+#violetspider4:hover,
+#yellowspider3:hover,
+#violetspider5:hover,
+#yellowspider4:hover,
+#violetspider6:hover
+ {
+  animation: shake 0.8s ease;
+} */
+
+
 
 #violetspider2 {
   position: absolute;
-  top: 130px;
+  top: 55vw;
   width: 30vw;
   left: 60vw;
   animation: violetspider 12s linear reverse infinite;
@@ -222,7 +240,7 @@ html {
 #yellowspider {
   position: absolute;
   left: 70vw;
-  top: 170px;
+  top: 60vw;
   width: 40vw;
   animation: violetspider 13s ease-in-out alternate infinite;
   animation-delay: 1s;
@@ -232,7 +250,7 @@ html {
   position: absolute;
   width: 20vw;
   left: 30vw;
-  top: 190px;
+  top: 65vw;
   animation: violetspider 15s ease-in reverse infinite;
 }
 
@@ -240,7 +258,7 @@ html {
   position: absolute;
   left: 30vw;
   width: 50vw;
-  top: 200px;
+  top: 65vw;
   animation: snake 40s ease-in-out infinite;
 }
 
@@ -249,7 +267,7 @@ html {
   position: absolute;
   left: 70vw;
   width: 20vw;
-  top: 280px;
+  top: 80vw;
   animation: snake 44s ease-in-out infinite;
 }
 
@@ -257,7 +275,7 @@ html {
   position: absolute;
   left: 50vw;
   width: 30vw;
-  top: 320px;
+  top: 110vw;
   animation: violetspider 11s ease-in-out alternate infinite;
 }
 
@@ -265,7 +283,7 @@ html {
   position: absolute;
   left: 10vw;
   width: 30vw;
-  top: 230px;
+  top: 80vw;
   animation: violetspider 17s ease-in-out reverse infinite;
 }
 
@@ -273,7 +291,7 @@ html {
   position: absolute;
   left: 1vw;
   width: 15vw;
-  top: 250px;
+  top: 100vw;
   animation: violetspider 20s ease-in-out infinite;
 }
 
@@ -281,7 +299,7 @@ html {
   position: absolute;
   left: -10vw;
   width: 40vw;
-  top: 280px;
+  top: 80vw;
   animation: violetspider 12s ease-in-out reverse infinite;
 }
 
@@ -289,7 +307,7 @@ html {
   position: absolute;
   left: 20vw;
   width: 30vw;
-  top: 325px;
+  top: 110vw;
   animation: violetspider 18s ease-in-out infinite;
 }
 
@@ -297,7 +315,7 @@ html {
   position: absolute;
   left: 1vw;
   width: 30vw;
-  top: 370px;
+  top: 105vw;
   animation: violetspider 10s ease-in-out reverse infinite;
 }
 
@@ -536,17 +554,18 @@ footer span {
   }
 
   .phobiaproba p {
-    margin-left: 267px;
+    margin-left: 71vw;
   }
 
   .bar {
     margin: 8px 121px 311px 22px;
   }
 
-  #snakehand {
-    left: 50px;
-    width: 450px;
-    top: -180px;
+  /* #snakehand {
+    position: absolute;
+    left: 15vw;
+    width: 130vw;
+    top: -52vw;
   }
 
   #spider1 {
@@ -565,7 +584,7 @@ footer span {
   #spiderhand {
     width: 450px;
     top: 70px;
-  }
+  } */
 
   footer span {
     margin-left: 8px;
@@ -575,6 +594,10 @@ footer span {
 }
 
 @media (min-width: 414px) {
+
+  /* .mouth img {
+    width: 65%;
+  } */
 
   .first header {
     font-size: 48px;
@@ -588,32 +611,30 @@ footer span {
 
 
   .phobiaproba {
-    margin-top: 80px;
+    margin-top: 30vw;
     margin-right: 22px;
 
   }
 
   .phobiaproba header {
     text-align: right;
-    margin-bottom: 180px;
+    margin-bottom: 40vh;
     margin-left: 10px;
   }
 
-  .phobiaproba p {
-    margin-left: 267px;
-  }
+  /* .phobiaproba p {
+    margin-left: 71vw;
+  } */
 
   .bar {
     margin: 8px 121px 311px 22px;
   }
 
   #snakehand {
-    left: 50px;
-    width: 520px;
-    top: -210px;
+    top: -64vw;
   }
 
-  #spider1 {
+  /* #spider1 {
     left: 22px;
     width: 90px;
     top: 20px;
@@ -624,11 +645,14 @@ footer span {
     width: 130px;
     top: 65px;
     animation: spider1 10s ease-in-out reverse infinite;
-  }
+  } */
 
   #spiderhand {
-    width: 500px;
-    top: 40px;
+    top: 12vw;
+  }
+
+  footer {
+    margin-top: 100vw;
   }
 
   footer span {
@@ -641,8 +665,8 @@ footer span {
 @media (min-width: 768px) {
 
   .mouth img {
-    top: 225px;
-    width: 45%;
+    width: 55%;
+    top: 28vw;
   }
 
   .first header {
@@ -655,16 +679,16 @@ footer span {
   }
 
   .phobiaproba {
-    margin-top: 130px;
-    margin-right: 26px;
-
+    margin-top: 26vw;
+    margin-right: 22px;
   }
 
   .phobiaproba header {
     text-align: right;
-    margin-bottom: 300px;
+    margin-bottom: 48vh;
     margin-left: 10px;
   }
+
 
   .phobiaproba p {
     margin-left: 560px;
@@ -678,13 +702,17 @@ footer span {
     margin-top: 20px;
   }
 
+  .second {
+    margin-top: 64vw;
+  }
+
   .second header {
     font-size: 165px;
     line-height: 110%;
 
   }
 
-  #snakehand {
+  /* #snakehand {
     left: 35vw;
     width: 700px;
     top: -294px;
@@ -700,14 +728,12 @@ footer span {
     left: 70vw;
     width: 20vw;
     top: 350px;
-  }
+  } */
 
   #spiderhand {
-    width: 700px;
-    top: 130px;
-    left: -30vw;
+    top: -2vw;
   }
-
+/*
   #violetspider {
     top: 180px;
     width: 25vw;
@@ -779,10 +805,10 @@ footer span {
     left: 11vw;
     width: 25vw;
     top: 500px;
-  }
+  } */
 
   footer {
-    margin-top: 550px;
+    margin-top: 115vw;
   }
 
   footer p {
@@ -802,7 +828,7 @@ footer span {
 @media (min-width: 1024px) {
 
   .mouth img {
-    top: -445px;
+    top: -44vw;
     width: 65%;
   }
 
@@ -816,7 +842,7 @@ footer span {
   }
 
   .phobiaproba {
-    margin-top: -10vw;
+    margin-top: -12vw;
     margin-right: 50px;
 
   }
@@ -839,34 +865,19 @@ footer span {
     margin-top: 30px;
   }
 
+  .second {
+    margin-top: 62vw;
+    margin-bottom: 35vw;
+  }
+
   .second header {
-    font-size: 200px;
+    font-size: 170px;
     line-height: 100%;
-
-  }
-
-  #snakehand {
-    left: 40vw;
-    width: 900px;
-    top: -31vw;
-  }
-
-  #spider1 {
-    left: 22px;
-    width: 25vw;
-    top: 20px;
-  }
-
-  #spider2 {
-    left: 70vw;
-    width: 20vw;
-    top: 350px;
   }
 
   #spiderhand {
-    width: 900px;
-    top: 0vw;
-    left: -30vw;
+    top: -18vw;
+
   }
 
   #violetspider {
@@ -943,7 +954,7 @@ footer span {
   }
 
   footer {
-    margin-top: 550px;
+    margin-top: 85vw;
   }
 
   footer p {
@@ -990,7 +1001,7 @@ footer span {
   }
 
   .phobiaproba p {
-    margin-left: 75vw;
+    margin-left: 80vw;
   }
 
   .bar {
@@ -1001,10 +1012,13 @@ footer span {
     margin-top: 30px;
   }
 
-  .second header {
-    font-size: 200px;
-    line-height: 100%;
+  .second {
+    margin-top: 23vw;
+  }
 
+  .second header {
+    font-size: 150px;
+    line-height: 100%;
   }
 
   #snakehand {
@@ -1027,85 +1041,66 @@ footer span {
 
   #spiderhand {
     width: 900px;
-    top: 0vw;
+    top: -4vw;
     left: -30vw;
   }
 
+
   #violetspider {
-    top: 25vw;
-    width: 20vw;
-    left: 85vw;
+    width: 22vw;
   }
 
   #violetspider2 {
-    top: 30vw;
-    width: 20vw;
-    left: 65vw;
+    width: 22vw;
   }
 
   #yellowspider {
-    left: 75vw;
-    top: 40vw;
-    width: 25vw;
+    width: 27vw;
   }
 
   #yellowspider2 {
-    width: 15vw;
-    left: 35vw;
-    top: 35vw;
+    width: 17vw;
   }
 
   #violetsnake {
-    left: 35vw;
-    width: 25vw;
-    top: 30vw;
+    width: 27vw;
   }
 
 
   #yellowsnake {
-    left: 70vw;
-    width: 10vw;
-    top: 35vw;
+    width: 12vw;
   }
 
   #violetspider3 {
-    left: 55vw;
-    width: 20vw;
-    top: 50vw;
+    width: 22vw;
   }
 
   #violetspider4 {
-    left: 15vw;
-    width: 20vw;
-    top: 50vw;
+    width: 22vw;
   }
 
   #yellowspider3 {
-    left: 6vw;
-    width: 20vw;
-    top: 35vw;
+    width: 22vw;
   }
 
   #violetspider5 {
-    left: -5vw;
-    width: 25vw;
-    top: 35vw;
+    width: 27vw;
   }
 
   #yellowspider4 {
-    left: 25vw;
-    width: 20vw;
-    top: 45vw;
+    width: 22vw;
   }
 
   #violetspider6 {
-    left: 6vw;
-    width: 20vw;
-    top: 50vw;
+    width: 22vw;
+  }
+
+  .second {
+    margin-bottom: 4vw;
   }
 
   footer {
-    margin-top: 750px;
+    margin-top: 50vw;
   }
 
   footer p {
@@ -1121,23 +1116,109 @@ footer span {
     margin-right: 30px;
   }
 
-
-
-
 }
 
 @media (min-width: 1366px) {
+
+  .mouth img {
+    top: -37vw;
+    width: 52%;
+  }
+
+  .phobiaproba {
+    margin-top: -9vw;
+    margin-right: 50px;
+  }
+
+  .phobiaproba p {
+    margin-left: 81vw;
+  }
+
+   #spiderhand {
+    width: 900px;
+    top: -6vw;
+    left: -21vw;
+  }
+
+  footer {
+  margin-top: 55vw;
+  }
 
 }
 
 @media (min-width: 1440px) {
 
+  .mouth img {
+    top: -31vw;
+    width: 47%;
+  }
+
+  .phobiaproba {
+    margin-top: -11vw;
+    margin-right: 50px;
+  }
+
+  .phobiaproba p {
+    margin-left: 82vw;
+  }
+
+  .second {
+    margin-top: 26vw;
+  }
+
+  #snakehand {
+    left: 53vw;
+  }
+
+  #spiderhand {
+    width: 900px;
+    top: -6vw;
+    left: -17vw;
+  }
+
+  footer {
+    margin-top: 60vw;
+  }
+
 }
 
 @media (min-width: 1680px) {
 
+  .phobiaproba {
+    margin-top: 3vw;
+    margin-right: 50px;
+  }
+
+  #snakehand {
+    left: 60vw;
+  }
+
+  #spiderhand {
+    width: 900px;
+    top: -6vw;
+    left: -15vw;
+  }
+
+  #spider1 {
+    left: 180px;
+    width: 25vw;
+    top: 20px;
+  }
+
+  #spider2 {
+    left: 64vw;
+    width: 20vw;
+    top: 350px;
+  }
+
+
 }
 
 @media (min-width: 1920px) {
+
+  .phobiaproba {
+    margin-top: 6vw;
+    margin-right: 50px;
+  }
 
 }
