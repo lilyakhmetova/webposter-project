@@ -627,6 +627,22 @@ footer span {
 
 }
 
+@media (min-width: 375px) and (min-height: 812px) {
+
+  .mouth img {
+    position: fixed;
+    top: 45vw;
+    z-index: -1;
+    width: 70%;
+  }
+
+  .phobiaproba {
+    margin-top: 174px;
+    margin-right: 22px;
+  }
+
+}
+
 @media (min-width: 414px) {
 
   /* .mouth img {
@@ -693,6 +709,23 @@ footer span {
     margin-left: 19px;
     margin-right: 19px;
   }
+
+}
+
+@media (min-width: 414px) and (min-height: 896px) {
+
+  .mouth img {
+    position: fixed;
+    top: 50vw;
+    z-index: -1;
+    width: 70%;
+  }
+
+  .phobiaproba {
+    margin-top: 243px;
+    margin-right: 22px;
+  }
+
 
 }
 
@@ -1188,7 +1221,7 @@ footer span {
   }
 
   .phobiaproba {
-    margin-top: -11vw;
+    margin-top: -4vw;
     margin-right: 50px;
   }
 
@@ -1253,6 +1286,10 @@ footer span {
   .phobiaproba {
     margin-top: 6vw;
     margin-right: 50px;
+  }
+
+  #snakehand {
+    left: 65vw;
   }
 
 }
